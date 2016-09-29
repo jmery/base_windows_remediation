@@ -1,0 +1,12 @@
+[Unicode]
+Unicode=yes
+[System Access]
+MinimumPasswordLength = <%= node['account']['minimumpasswordlength'] %>
+LockoutBadCount = <%= node['account']['lockoutbadcount'] %>
+[Event Audit]
+[Registry Values]
+[Privilege Rights]
+SeRemoteInteractiveLogonRight = <%= node['account']['rdp_admins'] %>
+[Version]
+signature="$CHICAGO$"
+Revision=1
